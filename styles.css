@@ -1,0 +1,226 @@
+/* الخلفية والتصميم الأساسي */
+
+.header {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 50;
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-image: url('profile.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* تنسيق الأيقونات */
+.contact-info-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.contact-info-inline p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-info-inline a {
+    color: #4ca1ff;
+    text-decoration: none;
+}
+
+.contact-info-inline a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.contact-info-inline i {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info-inline i:hover {
+    color: #4ca1ff;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #4ca1ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.social-links i {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-right: 5px;
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #4ca1ff;
+}
+
+/* تصميم النصوص */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* تعديل الحاوية */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* تصميم النصوص */
+.section-header h2 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #4ca1ff, #263646);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    text-align: left;
+}
+
+/* تنسيق النصوص */
+.section-header {
+    background: #1d2936;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 20px;
+    transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.section-header:hover {
+    background: linear-gradient(to right, #293b4d, #3e82cf);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(62, 130, 207, 0.6);
+}
+
+/* تصميم قسم المهارات */
+.skills-section {
+    position: relative;
+    overflow: hidden;
+}
+
+#dynamic-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* اجعل الخلفية خلف المحتوى */
+}
+
+.skills-section .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: #4ca1ff;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333; /* لون النص الأساسي */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background: #4ca1ff;
+    color: white; /* تأكد من وضوح النصوص */
+}
+
+.skill-card:hover i {
+    color: white; /* لون الأيقونات عند التحويم */
+}
+
+.skill-card:hover p {
+    color: white; /* لون النصوص عند التحويم */
+}
